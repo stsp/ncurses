@@ -1,0 +1,6 @@
+export CPPFLAGS="`pkg-config --variable=xcppflags dj64`"
+export CFLAGS="`pkg-config --cflags dj64` -shared"
+export LDFLAGS="`pkg-config --libs dj64` \
+  -Wl,-rpath=/usr/local/i386-pc-dj64/lib64 \
+  -Wl,-rpath=/usr/i386-pc-dj64/lib64"
+./configure --host=x86_64-pc-linux-gnu --disable-widec --without-cxx

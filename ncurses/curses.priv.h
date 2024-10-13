@@ -208,7 +208,7 @@ extern int errno;
  * the path separator in configure doesn't work properly. So, if building
  * for MinGW, we enforce the correct Windows PATH separator
  */
-#if defined(_NC_WINDOWS_NATIVE)
+#if defined(_NC_WINDOWS_NATIVE) || defined(__DJGPP__)
 #  ifdef NCURSES_PATHSEP
 #    undef NCURSES_PATHSEP
 #  endif

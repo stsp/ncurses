@@ -83,11 +83,11 @@ popup_msg(WINDOW *parent, NCURSES_CONST char *const *msg)
 	if (width < check)
 	    width = check;
     }
-    length = n + 2;
+    length = n;
 
     if ((help = newwin(high, wide, y0, x0)) == 0)
 	return;
-    if ((data = newpad(length + 1, width + 1)) == 0) {
+    if ((data = newpad(length + 2, width + 1)) == 0) {
 	delwin(help);
 	return;
     }

@@ -4,9 +4,7 @@ export LDFLAGS="`pkg-config --libs dj64` \
   -Wl,-rpath=/usr/local/i386-pc-dj64/lib64 \
   -Wl,-rpath=/usr/i386-pc-dj64/lib64"
 ./configure --host=x86_64-pc-linux-gnu \
-  --disable-widec \
   --without-cxx \
   --without-debug \
   --with-fallbacks=vt100,ansi,cygwin,linux,djgpp,djgpp203,djgpp204 \
-  --disable-database \
-  --enable-termcap
+  --disable-database

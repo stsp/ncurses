@@ -423,11 +423,6 @@ NCURSES_SP_NAME(_nc_setupscreen) (
 #endif
 	T(("filter screensize %dx%d", slines, scolumns));
     }
-#ifdef __DJGPP__
-    T(("setting output mode to binary"));
-    fflush(output);
-    setmode(fileno(output), O_BINARY);
-#endif
 #if defined(EXP_WIN32_DRIVER)
     T(("setting output mode to binary"));
     fflush(output);

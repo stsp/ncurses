@@ -1,5 +1,5 @@
 /****************************************************************************
- * Copyright 2018-2021,2022 Thomas E. Dickey                                *
+ * Copyright 2018-2022,2024 Thomas E. Dickey                                *
  * Copyright 1998-2016,2017 Free Software Foundation, Inc.                  *
  *                                                                          *
  * Permission is hereby granted, free of charge, to any person obtaining a  *
@@ -50,6 +50,10 @@
 #include <io.h>
 #endif
 
+#ifdef __DJGPP__
+#include <io.h>
+#endif
+
 #if USE_GPM_SUPPORT
 #ifdef HAVE_LIBDL
 /* use dynamic loader to avoid linkage dependency */
@@ -60,7 +64,7 @@
 #undef CUR
 #define CUR SP_TERMTYPE
 
-MODULE_ID("$Id: lib_set_term.c,v 1.184 2022/12/10 21:34:12 tom Exp $")
+MODULE_ID("$Id: lib_set_term.c,v 1.187 2024/11/02 21:00:54 tom Exp $")
 
 #ifdef USE_TERM_DRIVER
 #define MaxColors      InfoOf(sp).maxcolors

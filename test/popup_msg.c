@@ -27,7 +27,7 @@
  * authorization.                                                           *
  ****************************************************************************/
 /*
- * $Id: popup_msg.c,v 1.13 2024/10/06 21:07:01 tom Exp $
+ * $Id: popup_msg.c,v 1.14 2024/10/26 19:28:11 Stas.Sergeev Exp $
  *
  * Show a multi-line message in a window which may extend beyond the screen.
  *

@@ -46,9 +46,6 @@
 #include <curses.priv.h>
 #include <tic.h>
 #include <new_pair.h>
-#ifdef __DJGPP__
-#include <io.h>
-#endif
 
 #if USE_GPM_SUPPORT
 #ifdef HAVE_LIBDL

@@ -50,10 +50,6 @@
 #include <io.h>
 #endif
 
-#ifdef __DJGPP__
-#include <io.h>
-#endif
-
 #if USE_GPM_SUPPORT
 #ifdef HAVE_LIBDL
 /* use dynamic loader to avoid linkage dependency */

@@ -5,6 +5,9 @@ export LDFLAGS="`pkg-config --libs dj64` \
   -Wl,-rpath=/usr/i386-pc-dj64/lib64 \
   -nostdlib"
 ./configure --host=x86_64-pc-linux-gnu \
+  --prefix=`pkg-config --variable=dj64prefix dj64` \
+  --libdir=`pkg-config --variable=libdir dj64` \
+  --without-manpages \
   --without-cxx \
   --without-debug \
   --with-fallbacks=vt100,ansi,cygwin,linux,djgpp,djgpp203,djgpp204 \

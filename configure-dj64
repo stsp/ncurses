@@ -1,5 +1,5 @@
 export CPPFLAGS="`pkg-config --variable=xcppflags dj64`"
-export CFLAGS="`pkg-config --cflags dj64` -shared -g3"
+export CFLAGS="`pkg-config --cflags dj64` -g3"
 export LIBS="`pkg-config --libs-only-L --libs-only-l dj64`"
 export LDFLAGS="-Wl,-rpath=/usr/local/i386-pc-dj64/lib64 \
   -Wl,-rpath=/usr/i386-pc-dj64/lib64 \
